@@ -1,0 +1,2050 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --blue: #15537E;
+    --green: #68844E;
+}
+
+/* modal start */
+.onloadmodal {
+    background: #00000096;
+}
+
+.onloadmodal .mymodal {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    background-color: #743347;
+    color: white;
+}
+
+.onloadmodal .btn1 {
+    background-color: black;
+    color: white;
+}
+
+.onloadmodal .btn1:hover {
+    background-color: black;
+}
+
+.onloadmodal .list ul {
+    padding: 0;
+    margin-top: 10px;
+}
+
+.onloadmodal .list ul li {
+    list-style: none;
+}
+
+.onloadmodal input {
+    width: 100%;
+    padding: 10px 10px;
+    margin: 8px 0px;
+    border-radius: 0;
+}
+
+.onloadmodal .modal-body {
+    background: #EFD180;
+}
+
+.onloadmodal .btn-close {
+    background: transparent url(../close.png) center / 1em auto no-repeat;
+}
+
+/* modal end */
+/* slider right start */
+.slider-navbar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 9990;
+    display: none;
+    padding: 10px;
+}
+
+.slider-navbar-btn {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    box-shadow: rgba(0, 0, 0, 0.479) 0px 5px 15px;
+    cursor: pointer;
+}
+
+.slider-navbar-btn i {
+    background: var(--blue);
+    color: #fff;
+    padding: 10px 14px;
+    font-size: 20px;
+    border: 1px solid #fff;
+}
+
+.slider-navbar {
+    width: 370px;
+    height: 100vh;
+    background: #000000d7;
+    transition: .8s;
+}
+
+.slider-navbar .slider-navbar-child {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #ffffffc9;
+
+}
+
+.slider-navbar .slider-navbar-child i.fa-x {
+    background: #fff;
+    color: var(--blue);
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.slider-navbar .slider-navbar-child .navbar-header-logo {
+    /* margin: 10px 0 30px; */
+    margin: 30px 0 10px;
+}
+
+
+.slider-navbar .slider-navbar-child .navbar-header-link {
+    text-align: center;
+}
+
+.slider-navbar .slider-navbar-child .navbar-header-link a {
+    color: #fff;
+    display: block;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.slider-navbar .slider-navbar-child .navbar-header-phone {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.slider-navbar .slider-navbar-child .navbar-header-phone a {
+    margin: 0 6px;
+}
+
+.slider-navbar .slider-navbar-child .navbar-header-phone a i {
+    color: #fff;
+    font-size: 30px;
+}
+
+.slider-navbar .slider-navbar-child .navbar-header-social {
+    text-align: center;
+}
+
+.slider-navbar .slider-navbar-child .navbar-header-social a i {
+    margin: 0 6px;
+    color: #fff;
+    font-size: 30px;
+}
+
+.slider-navbar .slider-navbar-child .navbar-header-adres {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.slider-navbar .slider-navbar-child .navbar-header-adres p {
+    color: #fff;
+    margin: 10px 0;
+}
+
+.slider-navbar .slider-navbar-child .navbar-header-adres a i {
+    margin: 0 6px;
+    color: #fff;
+    font-size: 30px;
+}
+
+/* slider right start */
+
+/* .social-media-fixed {} */
+
+.social-media-fixed .fa-facebook-f {
+    position: fixed;
+    left: 5px;
+    bottom: 100px;
+    background: #1674EA;
+    color: #fff;
+    padding: 10px 14px;
+    z-index: 999;
+    font-size: 19px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.social-media-fixed .fa-instagram {
+    position: fixed;
+    left: 5px;
+    bottom: 142px;
+    background: linear-gradient(45deg, #405de6, #5b51d8, #833ab4, #c13584, #e1306c, #fd1d1d);
+    color: #fff;
+    padding: 10px 12px;
+    z-index: 999;
+    font-size: 19px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+
+.social-media-fixed .fa-twitter {
+    position: fixed;
+    left: 5px;
+    bottom: 186px;
+    background: #1C9CEA;
+    color: #fff;
+    padding: 10px 11px;
+    z-index: 999;
+    font-size: 19px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.social-media-fixed .fa-linkedin-in {
+    position: fixed;
+    left: 5px;
+    bottom: 230px;
+    background: #1C9CEA;
+    color: #fff;
+    padding: 10px 12px;
+    z-index: 999;
+    font-size: 19px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.social-media-fixed .fa-youtube {
+    position: fixed;
+    left: 5px;
+    bottom: 274px;
+    background: #F70000;
+    color: #fff;
+    padding: 10px 10px;
+    z-index: 999;
+    font-size: 19px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.whatsapp-icon {
+    position: fixed;
+    right: 30px;
+    bottom: 160px;
+    z-index: 999;
+}
+
+.whatsapp-icon a img {
+    width: 60px;
+}
+
+.phone-icon {
+    position: fixed;
+    right: 30px;
+    bottom: 83px;
+    z-index: 999;
+
+}
+
+.phone-icon a img {
+    width: 60px;
+}
+
+
+/* table hide show start */
+.fixed-btn-table {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 99999 !important;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 8px;
+    background: var(--blue);
+    cursor: pointer;
+}
+
+.table-hide-show .table-zone i.fa-hand-point-left {
+    animation: rightleft .9s infinite;
+    padding: 0;
+    color: #fff;
+    background: var(--blue);
+}
+
+.fixed-btn-table i.fa-hand-point-right {
+    animation: rightleft .9s infinite;
+    margin: 0 10px;
+}
+
+@keyframes rightleft {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.9);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.fixed-btn-table p {
+    color: white;
+    padding: 6px 7px;
+    font-size: 15px;
+    border: 1px solid #fff;
+}
+
+.table-hide-show {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: var(--blue);
+    color: #fff;
+    z-index: 9999 !important;
+    width: 100%;
+    /* height: 500px; */
+}
+
+.table-hide-show .cross {
+    margin-top: 20px;
+}
+
+.table-hide-show .cross p {
+    color: #fff;
+    font-size: 25px;
+    line-height: 28px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.table-hide-show .cross i.fa-link {
+    color: #fff;
+    background: var(--blue);
+}
+
+.table-hide-show .cross i {
+    color: #000;
+    background: #fff;
+    padding: 10px 15px;
+}
+
+.table-hide-show .table {
+    margin-top: 20px;
+}
+
+.table-hide-show th {
+    color: #fff !important;
+}
+
+.table-hide-show td {
+    color: #fff !important;
+}
+
+/* table hide show end */
+
+p {
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* top bar start */
+.jim-top-bar {
+    animation: mymove 5s infinite;
+    color: inherit;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@keyframes mymove {
+    0% {
+        background-color: var(--blue);
+    }
+
+    50% {
+        background-color: var(--green);
+    }
+
+    100% {
+        background-color: var(--blue);
+    }
+}
+
+.jim-top-bar .jim-top-bar-head p {
+    color: #fff;
+    font-size: 17px;
+}
+
+.jim-top-bar .jim-top-bar-head p a {
+    color: #fff;
+}
+
+/* top bar end */
+
+
+/* navabr start */
+.navbar {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    background: #fff;
+}
+
+.navbar .navbar-brand img {
+    width: 280px;
+}
+
+.navbar .navbar-nav .nav-item {
+    margin-right: 10px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    font-weight: 500;
+    font-size: 17px;
+    color: #000;
+}
+
+.navbar .navbar-toggler {
+    border: none;
+    font-size: 22px;
+}
+
+/* navabr end */
+
+/* banner start */
+.banner {
+    background: url(../images/banner/jim-corbett-jeep-safari-banner-img-02.webp) no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding: 100px 0;
+}
+
+.banner .banner-content .banner-service a {
+    padding: 10px 20px;
+    border: 1px solid #15527e73;
+    display: block;
+    width: 300px;
+    margin-top: 10px;
+    background: #15527ebb;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 7px;
+    text-align: center;
+}
+
+.banner .banner-content .banner-youtube {
+    margin-top: 20px;
+}
+
+.banner .banner-content .banner-youtube a {
+    background-color: #C71F1E;
+    color: #fff;
+    padding: 3px 20px;
+    border-radius: 15px;
+    font-size: 50px;
+}
+
+.banner .banner-content .banner-youtube i {
+    animation: banneryou .9s infinite;
+}
+
+@keyframes banneryou {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.banner .banner-content h1 {
+    color: var(--blue);
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.banner .banner-content p {
+    color: var(--blue);
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.banner .banner-content p span {
+    background: yellow;
+}
+
+.banner .banner-form {
+    padding: 0 25px 0 100px;
+    background: transparent;
+}
+
+.banner form {
+    border: 3px solid #15527e11;
+    padding: 20px;
+    /* text-align: center; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.banner form h3 {
+    color: var(--blue);
+}
+
+.banner form input,
+.banner form textarea {
+    margin-bottom: 5px;
+    border-radius: 0 !important;
+    padding: 14px 10px;
+}
+.banner form span {
+    color: red;
+}
+
+.banner form button {
+    background: #15527ed3;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+}
+
+.banner form input::placeholder {
+    font-size: 17px;
+}
+
+/* banner end */
+
+/* about us index start */
+.aboutus-index {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.aboutus-index .aboutus-content h1 {
+    /* font-weight: bold;
+    font-size: 45px;
+    color: var(--blue); */
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 100px;
+    text-transform: uppercase;
+    text-align: center;
+    background: url(../images/tiger-skin-bg.jpg);
+    background-position: bottom;
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+.aboutus-index .aboutus-content p {
+    font-size: 18px;
+    line-height: 35px;
+}
+
+/* about us index end */
+
+/* how to reach start */
+.how-reach {
+    padding: 40px 0;
+    background: linear-gradient(to right, #ffffffd5, #ffffffef), url(../images/how-to-reach-banner-bg.webp) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.how-reach .how-reach-content h1 {
+    font-weight: bold;
+    font-size: 45px;
+    color: var(--blue);
+    text-align: center;
+}
+
+.how-reach .how-reach-content p {
+    font-size: 18px;
+    line-height: 35px;
+    margin-bottom: 8px;
+    text-align: justify;
+}
+
+/* how to reach end */
+
+/* safari service start */
+.safari-service {
+    padding: 50px 0;
+}
+
+.safari-service h1 {
+    font-weight: bold;
+    font-size: 45px;
+    color: var(--blue);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.safari-service .safari-service-content {
+    border: 1px solid #77777723;
+    padding: 12px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.safari-service .safari-service-content:hover .safari-ser-img img {
+    opacity: .9;
+}
+
+.safari-service .safari-service-content .safari-ser-text {
+    background: var(--blue);
+    text-align: center;
+    padding: 14px 0;
+}
+
+.safari-service .safari-service-content .safari-ser-text p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.safari-service .safari-service-content .safari-ser-text span {
+    background: green;
+    padding: 5px 10px;
+    color: #fff;
+}
+
+/* safari service end */
+
+/* procedure start */
+.procedure {
+    padding: 60px 0;
+    background: url(../images/procedure-bg-image.webp) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 60px;
+    /* margin-bottom: 60px; */
+}
+
+.procedure h1 {
+    font-weight: bold;
+    font-size: 45px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+    /* background: yellow; */
+}
+
+.procedure .procedure-content .accordion-header button {
+    background: var(--blue);
+    color: #fff;
+}
+
+.procedure .accordion .accordion-button::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-plus-lg' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2'/%3E%3C/svg%3E");
+    --bs-accordion-btn-icon-width: 1rem;
+    background-color: #fff;
+}
+
+.procedure .accordion .accordion-button:not(.collapsed):after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8'/%3E%3C/svg%3E");
+}
+
+.procedure .accordion .accordion-item {
+    margin-bottom: 10px;
+}
+
+/* procedure end */
+
+/* typograpy start */
+.typograpy {
+    background: url(../images/typography-img-01.webp) no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.typograpy h1 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 6em;
+    text-transform: uppercase;
+    text-align: center;
+    background: url(../images/typography-img-02.jpg);
+    background-position: bottom;
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+.typograpy a {
+    background: var(--blue);
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 22px;
+}
+
+.typograpy h1:before {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    text-shadow: -5px 5px 20px #000, -10px 10px 30px #000, -20px 15px 40px #000, -25px 20px 50px #000;
+}
+
+/* typograpy end */
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query */
+@media screen and (max-width:1150px) {
+    .jim-top-bar .jim-top-bar-head p {
+        color: #fff;
+        font-size: 15px;
+    }
+
+    .navbar .navbar-brand img {
+        width: 200px;
+    }
+
+    .navbar .navbar-nav .nav-item .nav-link {
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width:991px) {
+    .banner .banner-form {
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .banner {
+        padding: 40px 0;
+    }
+
+    .banner .banner-content .banner-service a {
+        width: 100%;
+        background: #15527ed0;
+    }
+
+    .aboutus-index .aboutus-content h1 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .jim-top-bar .jim-top-bar-head p {
+        font-size: 14px;
+    }
+
+    .navbar .navbar-brand img {
+        width: 215px;
+    }
+
+    .banner .banner-content h1 {
+        font-size: 38px;
+    }
+
+    .banner .banner-content p {
+        font-size: 20px;
+    }
+
+    .aboutus-index .aboutus-content h1 {
+        font-size: 38px;
+    }
+
+    .query-head .query-content h1 {
+        font-size: 38px;
+    }
+
+    .safari-service h1 {
+        font-size: 38px;
+    }
+
+    .query-head .query-content p span a {
+        font-size: 16px;
+    }
+
+    .procedure h1 {
+        font-size: 38px;
+    }
+
+    .typograpy h1 {
+        font-size: 30px;
+    }
+
+    .banner form {
+        padding: 12px;
+    }
+
+    .banner-form form label {
+        padding: 10px 3px !important;
+    }
+
+    .table-hide-show .cross p {
+        font-size: 15px;
+    }
+
+    .table-hide-show .cross i {
+        padding: 5px 7px;
+    }
+
+    .phone-icon a img {
+        width: 40px;
+    }
+
+    .whatsapp-icon a img {
+        width: 40px;
+    }
+
+    .contact-section .contact-details-box {
+        padding: 10px;
+    }
+
+    .contact-section .bannerr .banner-form {
+        padding: 0 0px !important;
+    }
+
+    .whatsapp-icon {
+        bottom: 134px;
+        right: 10px;
+    }
+
+    .phone-icon {
+        right: 10px;
+    }
+
+    .footer .copyright {
+        padding: 20px 0 60px 0 !important;
+    }
+
+    .safari-other-service .safari-other-head .button-92 {
+        font-size: 12px !important;
+
+    }
+
+    .safari-other-service .safari-other-locate-hand {
+        padding: 0px 0 20px !important;
+    }
+
+    .safari-service {
+        padding: 30px 0px 0px;
+    }
+}
+
+
+
+
+/*  contact page header start */
+.contact-page-header {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    background: linear-gradient(rgba(0, 0, 0, 0.384), rgba(0, 0, 0, 0.267)), url(../images/contact-us-page-header=bg.webp);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contact-page-header h1 {
+    font-size: 45px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    background: var(--blue);
+}
+
+.contact-page-header p {
+    font-size: 20px;
+    color: rgb(208, 202, 202);
+}
+
+/*  contact page header end */
+
+
+
+/* term and condition page start */
+.term-and-condition-page {
+    padding: 40px 0;
+}
+
+.term-and-condition-page .term-and-condition-header p i {
+    color: var(--blue);
+    font-weight: bold;
+}
+
+.term-and-condition-page .term-and-condition-header p {
+    font-size: 18px;
+    line-height: 35px;
+    margin-bottom: 8px;
+    text-align: justify;
+}
+
+.term-and-condition-page .term-and-condition-header h5 {
+    margin: 30px 0;
+}
+
+.privacy-policy-page {
+    padding: 40px 0;
+}
+
+
+.privacy-policy-page .procedure-content .accordion-header button {
+    background: var(--blue);
+    color: #fff;
+}
+
+.privacy-policy-page .accordion .accordion-button::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-plus-lg' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2'/%3E%3C/svg%3E");
+    --bs-accordion-btn-icon-width: 1rem;
+    background-color: #fff;
+}
+
+.privacy-policy-page .accordion .accordion-button:not(.collapsed):after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8'/%3E%3C/svg%3E");
+}
+
+.privacy-policy-page .accordion .accordion-item {
+    margin-bottom: 10px;
+}
+
+.cancellation-page {
+    padding: 40px 0;
+}
+
+.cancellation-page .cancellation-header p i {
+    color: var(--blue);
+    font-weight: bold;
+}
+
+.cancellation-page .cancellation-header p {
+    font-size: 18px;
+    line-height: 35px;
+    margin-bottom: 8px;
+    text-align: justify;
+}
+
+.cancellation-page .cancellation-header h5 {
+    margin: 30px 0;
+}
+
+/* term and condition page end */
+
+
+
+/* contact us page start */
+.contact-section {
+    padding: 40px 0;
+}
+
+.contact-section .contact-details-box {
+    width: 100%;
+    /* border: solid var(--blue) 1px; */
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    min-height: 200px;
+    text-align: center;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+
+.contact-section .bannerr {
+    background: url(../images/contact-img-bg-form-fill.webp) no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding: 100px 0;
+}
+
+.contact-section .bannerr .banner-content .banner-service a {
+    padding: 10px 20px;
+    border: 1px solid #15527e73;
+    display: block;
+    width: 210px;
+    margin-top: 10px;
+    background: #15527ebb;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 7px;
+    text-align: center;
+}
+
+.contact-section .bannerr .banner-content h1 {
+    color: var(--blue);
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.contact-section .bannerr .banner-content p {
+    color: var(--blue);
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.contact-section .bannerr .banner-content p span {
+    background: yellow;
+}
+
+.contact-section .bannerr .banner-form {
+    padding: 0 30px;
+    background: transparent;
+}
+
+.contact-section .bannerr form {
+    border: 3px solid #15527e11;
+    padding: 20px;
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.contact-section .bannerr form h3 {
+    color: #fff;
+}
+
+.contact-section .bannerr form input,
+.contact-section .bannerr form textarea {
+    margin-bottom: 12px;
+    border-radius: 0 !important;
+    padding: 14px 10px;
+}
+
+.contact-section .bannerr form button {
+    background: #15527ed3;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+}
+
+.contact-section .bannerr form input::placeholder {
+    font-size: 17px;
+}
+
+
+
+
+.contact-details-box i {
+    font-size: 50px;
+    padding: 10px;
+    color: var(--blue);
+}
+
+/* banner end */
+/* contact us page end */
+
+
+
+
+
+
+
+
+/* still qury start */
+.query-head {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.query-head .query-content h1 {
+    font-weight: bold;
+    font-size: 45px;
+    color: var(--blue);
+}
+
+.query-head .query-content p {
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.query-head .query-content p span a {
+    color: var(--green);
+    font-weight: bold;
+}
+
+.query-head .query-content p i.fa-phone {
+    color: #00A8E8;
+    font-size: 25px;
+
+}
+
+.query-head .query-content p i.fa-whatsapp {
+    color: #1AD03F;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.query-head .query-content p i.fa-envelope {
+    color: #EC4134;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+/* still qury end */
+
+/* footer start */
+.pdn-top-30 {
+    padding-top: 60px;
+}
+
+.footer {
+    background: linear-gradient(to right, #15527ee0, #15527ef5), url(../images/footer-bg-img.webp) no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    /* background-color: var(--blue); */
+    text-align: center;
+    font-family: poppins;
+}
+
+.footer .registed-para {
+    color: #000;
+    text-align: center;
+    font-weight: bold;
+    background: rgb(238, 207, 31);
+}
+
+.footer .headinga h3 {
+    font-size: 38px;
+    display: block;
+    color: #fff;
+    max-width: 850px;
+    padding-bottom: 1px;
+    border-bottom: #fff solid 1px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    margin-bottom: 30px;
+}
+
+.footer .headinga span {
+    font-size: 17px;
+    display: block;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.footer .headinga p {
+    font-size: 17px;
+    display: block;
+    color: #fff;
+    line-height: 30px;
+}
+
+.footer ul.link li {
+    display: inline-block;
+    padding: 8px 15px;
+}
+
+.footer ul.link li a {
+    color: #fff;
+    font-size: 17px;
+}
+
+.footer ul.link li a:hover {
+    color: #fff !important;
+    letter-spacing: 1px;
+    transition: .3s;
+}
+
+.footer ul.location_icon {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 5px;
+}
+
+.footer ul.location_icon li {
+    float: left;
+    height: 60px;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.footer ul.location_icon li:last-child {
+    padding-right: 0px;
+}
+
+.footer ul.location_icon li a {
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border: solid #fff 1px;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 100%;
+    font-size: 18px;
+}
+
+.footer .copyright {
+    background: #fff;
+    padding: 20px 0px 20px 0;
+    margin-top: 50px;
+}
+
+.footer .copyright p {
+    color: #413e3e;
+    font-size: 16px;
+    text-align: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.footer .copyright a {
+    color: orange;
+}
+
+.footer .copyright a:hover {
+    color: orange;
+}
+
+/* footer end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* paralex start index */
+.paralex-heading {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 45px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.parallax-01 {
+    background: -webkit-linear-gradient(#0000007c, #0000007c), url(../images/sub-img-background-01.webp) center;
+    background: -o-linear-gradient(#0000007c, #0000007c), url(../images/sub-img-background-01.webp) center;
+    background: linear-gradient(#0000007c, #0000007c), url(../images/sub-img-background-01.webp) center;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 10px 0 100px;
+}
+
+.sub-paralex {
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    padding: 20px;
+}
+
+.sub-paralex h3 {
+    color: #fff;
+    font-size: 35px;
+    background: #15527ea1;
+}
+
+.sub-paralex p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.parallax-02 {
+    background: -webkit-linear-gradient(#0000007c, #0000007c), url(../images/sub-img-background-02.webp) center;
+    background: -o-linear-gradient(#0000007c, #0000007c), url(../images/sub-img-background-02.webp) center;
+    background: linear-gradient(#0000007c, #0000007c), url(../images/sub-img-background-02.webp) center;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+}
+
+.parallax-03 {
+    background: -webkit-linear-gradient(#0000007c, #0000007c), url(../images/sub-img-background-03.webp) center;
+    background: -o-linear-gradient(#0000007c, #0000007c), url(../images/sub-img-background-03.webp) center;
+    background: linear-gradient(#0000007c, #0000007c), url(../images/sub-img-background-03.webp) center;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+}
+
+.parallax-04 {
+    background: -webkit-linear-gradient(#0000007c, #0000007c), url(../images/sub-img-background-04.webp) center;
+    background: -o-linear-gradient(#0000007c, #0000007c), url(../images/sub-img-background-04.webp) center;
+    background: linear-gradient(#0000007c, #0000007c), url(../images/sub-img-background-04.webp) center;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+}
+
+/* button */
+/* CSS */
+.paralexss a.button-4,
+.paralexss a.button-4:before,
+.paralexss a.button-4:after {
+    box-sizing: border-box;
+}
+
+.paralexss a.button-4 {
+    touch-action: manipulation;
+    position: relative;
+    background: transparent;
+    border: none;
+    outline: none;
+    display: block;
+    height: 60px;
+    width: 175px;
+    padding: 20px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin: 0 auto;
+    border-radius: 10px;
+    top: 0;
+    -webkit-transition: 0.15s ease-in-out;
+    -moz-transition: 0.15s ease-in-out;
+    -ms-transition: 0.15s ease-in-out;
+    -o-transition: 0.15s ease-in-out;
+    transition: 0.15s ease-in-out;
+}
+
+.paralexss a.button-4 {
+    touch-action: manipulation;
+    -webkit-transform: perspective(500px) rotateX(35deg);
+}
+
+.paralexss a.button-4:before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 1;
+    background: #f25d30;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #f25d30 0%, #e03b00 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f25d30),
+            color-stop(100%, #e03b00));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #f25d30 0%, #e03b00 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #f25d30 0%, #e03b00 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #f25d30 0%, #e03b00 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #f25d30 0%, #e03b00 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f25d30",
+            endColorstr="#e03b00", GradientType=0);
+    /* IE6-9 */
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-shadow: inset 0 -2px 5px rgba(255, 255, 255, 0.3);
+}
+
+.paralexss a.button-4:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    left: 1px;
+    height: 15px;
+    width: 173px;
+    background: #ba2500;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #ba2500 0%, #9b3100 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ba2500),
+            color-stop(100%, #9b3100));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #ba2500 0%, #9b3100 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #ba2500 0%, #9b3100 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #ba2500 0%, #9b3100 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #ba2500 0%, #9b3100 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ba2500",
+            endColorstr="#9b3100", GradientType=0);
+    /* IE6-9 */
+    border-radius: 0 0 5px 5px;
+    -webkit-transform: perspective(500px) rotateX(-40deg);
+    box-shadow: inset 0 -2px 3px rgba(0, 0, 0, 0.5), 0 3px 2px -1px black;
+    -webkit-transition: 0.15s ease-in-out;
+    -moz-transition: 0.15s ease-in-out;
+    -ms-transition: 0.15s ease-in-out;
+    -o-transition: 0.15s ease-in-out;
+    transition: 0.15s ease-in-out;
+}
+
+.paralexss a.button-4:hover {
+    top: -3px;
+}
+
+.paralexss a.button-4:hover:after {
+    height: 18.5px;
+    bottom: -13px;
+}
+
+.paralexss a.button-4:active {
+    top: 0px;
+}
+
+.paralexss a.button-4:active:after {
+    height: 15px;
+    bottom: -10px;
+}
+
+.paralexss a.button-4 .text {
+    position: relative;
+    z-index: 2;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.paralexss a.button-4 {
+    color: #fff;
+}
+
+/* paralex end index */
+
+
+/* gallerysection index start */
+.gallery-index {
+    padding: 60px 0;
+}
+
+
+.gallery-index .gallery-img img {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.gallery-index .owl-carousel .owl-nav button.owl-next,
+.gallery-index .owl-carousel .owl-nav button.owl-prev,
+.gallery-index .owl-carousel button.owl-dot {
+    background: var(--blue) !important;
+    color: #fff !important;
+    border: none !important;
+    padding: 10px 20px !important;
+    /* font: 40px !important; */
+}
+
+.gallery-index .owl-carousel .owl-nav button.owl-next i,
+.gallery-index .owl-carousel .owl-nav button.owl-prev i {
+    font-size: 20px !important;
+}
+
+/* gallerysection index end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* service start */
+.jim-corbett-service-page {
+    padding: 60px 0;
+}
+
+.jim-corbett-service-page a {
+    color: #000;
+}
+
+.jim-corbett-service-page .jim-corbett-service-head {
+    display: flex;
+    align-items: center;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    margin: auto 0;
+    margin-bottom: 26px;
+}
+
+.jim-corbett-service-page .jim-corbett-service-head .jim-corbett-img {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.jim-corbett-service-page .jim-corbett-service-head:hover .jim-corbett-img img {
+    transform: scale(1.4) rotate(4deg);
+    transition: .9s ease-in-out;
+}
+
+.jim-corbett-service-page .jim-corbett-service-head .sticker {
+    background: #64E31B;
+    width: 240px;
+    padding: 10px 5px;
+    position: absolute;
+    left: -56px;
+    top: 24px;
+    transform: rotate(-38deg);
+    text-align: center;
+
+}
+
+.jim-corbett-service-page .jim-corbett-service-head .sticker span {
+    color: #fff;
+    font-weight: 800;
+}
+
+.jim-corbett-service-page .jim-corbett-service-head .jim-corbett-img img {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.jim-corbett-service-page .jim-corbett-service-head .jim-corbett-title {
+    padding: 10px 10px 6px 10px;
+}
+
+.jim-corbett-service-page .jim-corbett-service-head .jim-corbett-title h3 {
+    color: var(--blue);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.jim-corbett-service-page .jim-corbett-service-head .jim-corbett-title span {
+    font-size: 14px;
+    font-weight: 600;
+    border-bottom: 2px solid var(--green);
+    /* padding: 6px 0; */
+}
+
+.jim-corbett-service-page .jim-corbett-service-head .jim-corbett-title p {
+    margin-top: 14px;
+    text-align: justify;
+}
+
+.jim-corbett-service-page .jim-corbett-service-head .jim-corbett-title p.btn {
+    color: green;
+    font-weight: 700;
+    border: 1px dotted var(--blue);
+    margin-top: 8px;
+
+}
+
+.jim-corbett-service-page .jim-corbett-service-right {
+    text-align: center;
+}
+
+.jim-corbett-service-page .jim-corbett-service-right .service-form {
+    background: var(--blue);
+    padding: 15px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    margin-bottom: 50px;
+}
+
+.jim-corbett-service-page .jim-corbett-service-right .service-form h3 {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.jim-corbett-service-page .jim-corbett-service-right .service-form input,
+.jim-corbett-service-page .jim-corbett-service-right .service-form textarea {
+    padding: 13px 10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.jim-corbett-service-page .jim-corbett-service-right .service-form button {
+    background: green;
+    color: #fff;
+    font-weight: 500;
+    padding: 10px;
+    outline: none;
+    border: none;
+}
+
+.jim-corbett-service-page .all-service-link {
+    text-align: left;
+    margin: 20px 0;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.jim-corbett-service-page .all-service-link .need-help {
+    border: 1px solid #777;
+}
+
+.jim-corbett-service-page .all-service-link .need-help p {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.jim-corbett-service-page .all-service-link .need-help p i.fa-phone {
+    color: #00A8E8;
+}
+
+.jim-corbett-service-page .all-service-link .need-help p i.fa-envelope {
+    color: #EC4134;
+}
+
+.jim-corbett-service-page .all-service-link .need-help p:nth-child(3) {
+    font-size: 14px;
+}
+
+.jim-corbett-service-page .all-service-link h5 {
+    background: var(--green);
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    padding: 20px 0;
+}
+
+.jim-corbett-service-page .all-service-link ul {
+    padding: 0;
+}
+
+.jim-corbett-service-page .all-service-link ul li {
+    list-style: none;
+    border: 1px solid var(--blue);
+    margin: 1px 0;
+}
+
+.jim-corbett-service-page .all-service-link ul li:hover {
+    background: var(--blue);
+    color: #fff;
+}
+
+.jim-corbett-service-page .all-service-link ul li:hover a {
+    color: #fff;
+}
+
+.jim-corbett-service-page .all-service-link ul li a {
+    padding: 15px 10px;
+    display: block;
+    font-weight: 500;
+}
+
+.jim-corbett-service-page .right-img-service {
+    padding: 6px;
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+.jim-corbett-service-page .right-img-service img:hover {
+    opacity: .9;
+}
+
+.jim-corbett-service-page .jim-corbett-all-safari-zone {
+    padding: 40px 0;
+}
+
+.jim-corbett-service-page .jim-corbett-all-safari-zone .jim-corbett-safari-zone-head {
+    text-align: center;
+    overflow: hidden;
+}
+
+.jim-corbett-service-page .jim-corbett-all-safari-zone .jim-corbett-safari-zone-head:hover .jc-safari-zone-img {
+    overflow: hidden;
+}
+
+.jim-corbett-service-page .jim-corbett-all-safari-zone .jim-corbett-safari-zone-head:hover .jc-safari-zone-img img {
+    transform: scale(1.4) rotate(2deg);
+    transition: .9s ease-in-out;
+}
+
+.jim-corbett-service-page .jim-corbett-all-safari-zone .jim-corbett-safari-zone-head .jc-safari-zone-title {
+    background: var(--green);
+    padding: 1cqw;
+}
+
+.jim-corbett-service-page .jim-corbett-all-safari-zone .jim-corbett-safari-zone-head .jc-safari-zone-title h5 {
+    color: #fff;
+}
+
+.jim-corbett-service-page .jim-corbett-all-safari-zone .jim-corbett-safari-zone-head .jc-safari-zone-title a {
+    color: var(--blue);
+    background: #fff;
+    padding: 10px 20px;
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+/* service end */
+
+/* safari other service start */
+.safari-other-service {
+    background: url(../images/other-service-bg-img.webp) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 40px 0;
+}
+
+.safari-other-service .safari-other-locate-hand {
+    padding: 20px 0 40px;
+    text-align: center;
+}
+
+.safari-other-service .safari-other-locate-hand i {
+    color: #FFB400;
+    font-size: 70px;
+    animation: handdownlocate .9s infinite;
+}
+
+@keyframes handdownlocate {
+    0% {
+        transform: translateY(-14px);
+    }
+
+    50% {
+        transform: translateY(-0px);
+    }
+
+    100% {
+        transform: translateY(-15px);
+    }
+}
+
+.safari-other-service .safari-other-head .button-92 {
+    --c: #fff;
+    background: linear-gradient(90deg, #0000 33%, #fff5, #0000 67%) var(--_p, 100%)/300% no-repeat,
+        var(--blue);
+    color: #0000;
+    border: none;
+    transform: perspective(500px) rotateY(calc(20deg*var(--_i, -1)));
+    text-shadow: calc(var(--_i, -1)* 0.08em) -.01em 0 var(--c),
+        calc(var(--_i, -1)*-0.08em) .01em 2px #0004;
+    outline-offset: .1em;
+    transition: 0.3s;
+}
+
+.safari-other-service .safari-other-head .button-92:hover,
+.safari-other-service .safari-other-head .button-92:focus-visible {
+    --_p: 0%;
+    --_i: 1;
+}
+
+.safari-other-service .safari-other-head .button-92:active {
+    text-shadow: none;
+    color: var(--c);
+    box-shadow: inset 0 0 9e9q #0005;
+    transition: 0s;
+}
+
+.safari-other-service .safari-other-head .button-92 {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+    cursor: pointer;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.safari-other-service .safari-other-head .button-92 a {
+    color: #fff;
+    font-weight: 300;
+}
+
+
+/* safari other service end */
+
+
+/* safari booking page start */
+.jim-corbett-service-page .jim-corbett-book-table {
+    margin: 40px 0 0px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 12px;
+}
+
+.jim-corbett-service-page .jim-corbett-book-table h4 {
+    background: var(--blue);
+    color: #fff;
+    padding: 12px 0;
+    text-align: center;
+}
+
+.jim-corbett-service-page .jim-corbett-book-table td {
+    font-weight: 500;
+}
+
+/* safari booking page end */
+
+/* safari zone details page start */
+.jim-corbett-service-details {
+    padding: 40px 0;
+}
+
+.jim-corbett-service-details .jim-corbett-service-details-img {}
+
+.jim-corbett-service-details .jim-corbett-service-details-head {
+    background: #EDF4F1;
+    height: 100%;
+    padding: 20px;
+}
+
+.jim-corbett-service-details .jim-corbett-service-details-head .jim-corbett-service-details-title-01 {}
+
+.jim-corbett-service-details .jim-corbett-service-details-head .jim-corbett-service-details-title-01 h3 {
+    color: var(--blue);
+    font-weight: bold;
+}
+
+.jim-corbett-service-details .jim-corbett-service-details-head .jim-corbett-service-details-title-01 p {
+    color: #000;
+    font-weight: 500;
+    border-bottom: 1px solid #7777777c;
+    padding: 6px 0;
+    margin: 4px 0;
+}
+
+.jim-corbett-service-details .jim-corbett-service-details-head .jim-corbett-service-details-title-01 p i {
+    color: orange;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.jim-corbett-service-details .jim-corbett-service-details-head .jim-corbett-service-details-title-02 {
+    margin-top: 16px;
+}
+
+.jim-corbett-service-details .jim-corbett-service-details-head .jim-corbett-service-details-title-02 h4 {
+    color: var(--blue);
+    font-weight: bold;
+}
+
+.jim-corbett-service-details .jim-corbett-service-details-head .jim-corbett-service-details-title-02 ul li {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.jim-corbett-service-details .jim-corbett-service-details-head .jim-corbett-service-details-title-03 a {
+    margin: 0 3px;
+}
+
+.jim-corbett-service-details .jim-corbett-service-details-head .jim-corbett-service-details-title-03 a i.fa-facebook-f {
+    background: #3468D4;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 25px;
+}
+
+.jim-corbett-service-details .jim-corbett-service-details-head .jim-corbett-service-details-title-03 a i.fa-twitter {
+    background: #1C9BE9;
+    color: #fff;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-size: 25px;
+}
+
+.jim-corbett-service-details .jim-corbett-service-details-head .jim-corbett-service-details-title-03 a i.fa-linkedin-in {
+    background: #065FC1;
+    color: #fff;
+    padding: 10px 11px;
+    border-radius: 5px;
+    font-size: 25px;
+}
+
+.jim-corbett-service-details .jim-corbett-service-details-head .jim-corbett-service-details-title-03 a i.fa-instagram {
+    background: linear-gradient(220deg, #405de6, #5b51d8, #833ab4, #c13584, #e1306c, #fd1d1d);
+    color: #fff;
+    padding: 10px 11px;
+    border-radius: 5px;
+    font-size: 25px;
+}
+
+.jim-corbett-service-details .jim-corbett-service-details-head .jim-corbett-service-details-title-03 a i.fa-whatsapp {
+    background: #24CC63;
+    color: #fff;
+    padding: 10px 11px;
+    border-radius: 5px;
+    font-size: 25px;
+}
+
+.jim-corbett-service-details .jim-corbett-service-details-title-04 {
+    padding: 20px 0 0;
+}
+
+.jim-corbett-service-details .jim-corbett-service-details-title-04 .ser-glry.ser-glry-hide {
+    display: none;
+}
+
+.jim-corbett-service-details-second {
+    /* padding: 20px 0; */
+}
+
+.jim-corbett-service-details-second h3 {
+    color: var(--blue);
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.jim-corbett-service-details-second p {
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.jim-corbett-service-details-second h5 {
+    color: #000;
+    font-weight: 600;
+}
+
+.jim-corbett-service-details-second ul li {
+    font-size: 18px;
+    line-height: 40px;
+}
+
+/* .jim-corbett-service-details-second .jim-corbett-service-details-form {
+    text-align: center;
+} */
+ 
+.jim-corbett-service-details-second .jim-corbett-service-details-form span{
+    text-align: left;
+    color: #fff;
+}
+
+.jim-corbett-service-details-second .jim-corbett-service-details-form {
+    background: var(--blue);
+    padding: 15px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    margin-bottom: 50px;
+}
+
+.jim-corbett-service-details-second .jim-corbett-service-details-form h3 {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.jim-corbett-service-details-second .jim-corbett-service-details-form input,
+.jim-corbett-service-details-second .jim-corbett-service-details-form textarea {
+    padding: 13px 10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.jim-corbett-service-details-second .jim-corbett-service-details-form button {
+    background: green;
+    color: #fff;
+    font-weight: 500;
+    padding: 10px;
+    outline: none;
+    border: none;
+    width: 100%;
+   
+}
+
+.jim-corbett-service-details-second .right-img-service {
+    padding: 6px;
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+.jim-corbett-service-details-second .table-responsive h4 {
+    background: var(--blue);
+    color: #fff;
+    padding: 12px 0;
+    text-align: center;
+}
+
+/* safari zone details page end */
